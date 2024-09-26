@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, TouchableOpacity, Pressable } from "react-native";
 
-export function ModalPassword(senha, handleClose) {
+export function ModalPassword({ senha, handleClose }) {
     return (
         <View style={styles.container}>
             <View style={styles.content}>
@@ -21,10 +21,9 @@ export function ModalPassword(senha, handleClose) {
                         <Text style={styles.buttonSaveText}>Salvar Senha</Text>
                     </TouchableOpacity>
                 </View>
-
             </View>
         </View>
-    )
+    );
 }
 
 const styles = StyleSheet.create({
@@ -34,7 +33,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-    content:{
+    content: {
         backgroundColor: "#FFF",
         width: "85%",
         paddingTop: 24,
@@ -43,42 +42,42 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         borderRadius: 8,
     },
-    title:{
+    title: {
         fontSize: 20,
         fontWeight: "bold",
         color: "#000",
         marginBottom: 24,
     },
-    innerPassword:{
+    innerPassword: {
         backgroundColor: "#e0e0e0",
         width: "90%",
         padding: 14,
         borderRadius: 8,
     },
-    text:{
-        color: "#FFF",
+    text: {
+        color: "#000",
         textAlign: "center"
     },
-    buttonArea:{
+    buttonArea: {
         flexDirection: "row",
         width: "90%",
         marginTop: 8,
         alignItems: "center",
         justifyContent: "space-between"
     },
-    button:{
+    button: {
         flex: 1,
         alignItems: 'center',
         marginTop: 14,
         marginBottom: 14,
         padding: 8,
     },
-    buttonSave:{
+    buttonSave: {
         backgroundColor: "#392DE9",
         borderRadius: 8,
     },
-    buttonSaveText:{
+    buttonSaveText: {
         color: "#FFF",
         fontWeight: 'bold'
     },
-})
+});
